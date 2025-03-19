@@ -145,13 +145,6 @@ class Migration(migrations.Migration):
              ),
          ),
          migrations.AlterField(
-             model_name="sourcetransaction",
-             name="amount",
-             field=djstripe.fields.StripeDecimalCurrencyAmountField(
-                 blank=True, decimal_places=2, max_digits=14, null=True
-             ),
-         ),
-         migrations.AlterField(
              model_name="transfer",
              name="amount",
              field=djstripe.fields.StripeDecimalCurrencyAmountField(
