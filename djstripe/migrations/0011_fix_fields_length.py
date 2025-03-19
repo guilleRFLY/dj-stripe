@@ -110,13 +110,6 @@ class Migration(migrations.Migration):
              ),
          ),
          migrations.AlterField(
-             model_name="lineitem",
-             name="unit_amount_excluding_tax",
-             field=djstripe.fields.StripeDecimalCurrencyAmountField(
-                 blank=True, decimal_places=2, max_digits=14, null=True
-             ),
-         ),
-         migrations.AlterField(
              model_name="payout",
              name="amount",
              field=djstripe.fields.StripeDecimalCurrencyAmountField(
